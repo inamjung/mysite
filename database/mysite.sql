@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50525
 File Encoding         : 65001
 
-Date: 2017-07-15 13:33:13
+Date: 2017-07-15 13:57:03
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -65,7 +65,7 @@ CREATE TABLE `acdetail` (
   `amount` double(11,2) DEFAULT NULL COMMENT 'ยอดเงิน',
   `pay` double(11,2) DEFAULT NULL COMMENT 'ยอดชำระ',
   `amount_arrear` double(11,2) DEFAULT NULL COMMENT 'ยอดเงินรวมค้าง',
-  `arrear` decimal(11,2) DEFAULT NULL COMMENT 'ค้างชำระ',
+  `arrear` double(11,2) DEFAULT NULL COMMENT 'ค้างชำระ',
   `total_arrear` double(11,2) DEFAULT NULL,
   `remark` varchar(255) DEFAULT NULL COMMENT 'หมายเหตุ',
   PRIMARY KEY (`id`)
